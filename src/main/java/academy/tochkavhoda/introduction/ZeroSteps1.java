@@ -76,7 +76,10 @@ public class ZeroSteps1 {
         return digit1 * digit2 * digit3 * digit4;
     }
     public boolean isCircleInsideSquare(int radius, int side) {
-        return 2 * radius <= side;
+        if (radius < 0 || side < 0) {
+            throw new IllegalArgumentException("Radius and side must be non-negative");
+        }
+        return 2 * radius < side;
     }
     public char getCharByCode(short code) {
         return (char) code;
