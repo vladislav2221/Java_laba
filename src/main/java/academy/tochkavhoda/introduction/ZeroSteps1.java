@@ -77,7 +77,7 @@ public class ZeroSteps1 {
     }
     public boolean isCircleInsideSquare(int radius, int side) {
         if (radius < 0 || side < 0) {
-            throw new IllegalArgumentException("Radius and side must be non-negative");
+            throw new IllegalArgumentException("Радиус и сторона должны быть неотрицательными");
         }
         return 2 * radius < side;
     }
